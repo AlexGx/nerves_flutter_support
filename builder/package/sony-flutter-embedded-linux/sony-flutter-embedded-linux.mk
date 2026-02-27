@@ -5,10 +5,10 @@
 #################################################################################
 
 SONY_FLUTTER_EMBEDDED_LINUX_VERSION = $(shell cat ../../FLUTTER_ENGINE_HASH)
-SONY_FLUTTER_EMBEDDED_LINUX_SITE = $(call github,sony,flutter-embedded-linux,$(SONY_FLUTTER_EMBEDDED_LINUX_VERSION))
-SONY_FLUTTER_EMBEDDED_LINUX_LICENSE = MIT
+SONY_FLUTTER_EMBEDDED_LINUX_SITE = $(call github,flutter-elinux,flutter-embedded-linux,$(SONY_FLUTTER_EMBEDDED_LINUX_VERSION))
+SONY_FLUTTER_EMBEDDED_LINUX_LICENSE = BSD-3-Clause
 SONY_FLUTTER_EMBEDDED_LINUX_LICENSE_FILES = LICENSE
-SONY_FLUTTER_EMBEDDED_LINUX_EXTRA_DOWNLOADS=https://github.com/sony/flutter-embedded-linux/releases/download/$(SONY_FLUTTER_EMBEDDED_LINUX_VERSION)/elinux-arm64-release.zip
+SONY_FLUTTER_EMBEDDED_LINUX_EXTRA_DOWNLOADS = https://github.com/flutter-elinux/flutter-embedded-linux/releases/download/$(SONY_FLUTTER_EMBEDDED_LINUX_VERSION)/elinux-arm64-release.zip
 
 SONY_FLUTTER_EMBEDDED_LINUX_CONF_OPTS = -DBACKEND_TYPE=DRM-GBM -DENABLE_ELINUX_EMBEDDER_LOG=ON -DUSER_PROJECT_PATH=examples/flutter-drm-gbm-backend -DNDEBUG=ON -DCMAKE_BUILD_TYPE=Debug -DFLUTTER_RELEASE=ON
 

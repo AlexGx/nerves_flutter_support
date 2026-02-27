@@ -5,8 +5,9 @@ defmodule NervesFlutterSupport.Downloader do
   alias NervesFlutterSupport.DownloadCache
   require Logger
 
-  @base_runtime_url "https://nerves-flutter-support.b-cdn.net/artifacts"
-  @base_utils_url "https://github.com/sony/flutter-embedded-linux/releases/download"
+  # @base_runtime_url "https://nerves-flutter-support.b-cdn.net/artifacts"
+  @base_runtime_url "https://build-artifacts.b-cdn.net/files"
+  @base_utils_url "https://github.com/flutter-elinux/flutter-embedded-linux/releases/download"
 
   @doc """
   Computes and returns the URL to the host utilities archive that matches
